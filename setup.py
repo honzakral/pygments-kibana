@@ -9,5 +9,6 @@ setup(
     packages=["pygments_kibana"],
     install_requires=["Pygments"],
     description="Pygments lexer for Kibana Console input",
+    long_description="Pygments lexer for Kibana Console input",
     entry_points={"pygments.lexers": ["release = pygments_kibana.kibana_lexer:KibanaLexer"]},
 )

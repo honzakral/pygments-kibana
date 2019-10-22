@@ -13,20 +13,20 @@ The lexer can then be used under the name `kibana`, for example in [reStructured
 ```
 .. code:: kibana
 
-	# create a template
-	PUT _templates/sample  
-	{}                       
-				
-	PUT sample-000001
-	{ "aliases": {"sample": {}}}
-																	
-	POST sample/_rollover
-													
-	POST _reindex?slices=auto
-	{                            
-		"source": {"index": "sample-raw"},
-		"dest": {"index": "sample"}           
-	}        
+  # create a template
+  PUT _templates/sample  
+  {}                       
+
+  PUT sample-000001
+  { "aliases": {"sample": {}}}
+
+  POST sample/_rollover
+
+  POST _reindex?slices=auto
+  {                            
+    "source": {"index": "sample-raw"},
+    "dest": {"index": "sample"}           
+  }        
 ```
 
 will render as:
