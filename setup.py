@@ -6,6 +6,8 @@ setup(
     author="Honza Král",
     author_email="honza.kral@gmail.com",
     version="0.0.1",
+    license="Apache License, Version 2.0",
+    url="https://github.com/honzakral/pygments-kibana",
     packages=["pygments_kibana"],
     install_requires=["Pygments"],
     description="Pygments lexer for Kibana Console input",
